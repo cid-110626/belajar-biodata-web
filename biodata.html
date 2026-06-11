@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri - Vauzi Ainur Rosyid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e0f2fe 0%, #38bdf8 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Container untuk foto profil agar bulat sempurna */
+        .profile-img-container {
+            width: 110px;
+            height: 110px;
+            background-color: #e0f2fe;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            overflow: hidden; /* Memastikan foto tidak keluar dari lingkaran */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Styling untuk foto */
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Membuat foto memenuhi area tanpa distorsi */
+        }
+
+        .card-header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+
+        .card-header p {
+            font-size: 14px;
+            color: #e0f2fe;
+            font-weight: 300;
+        }
+
+        .card-body {
+            padding: 30px 25px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .icon {
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: #f0f9ff;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+        }
+
+        .info-content {
+            flex: 1;
+        }
+
+        .label {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #64748b;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+        }
+
+        .value {
+            font-size: 16px;
+            color: #1e293b;
+            font-weight: 500;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-header">
+            <div class="profile-img-container">
+                <img src="profil.jpg" alt="Foto Propil Vauzi" class="profile-img">
+            </div>
+            <h1>Vauzi Ainur Rosyid</h1>
+            <p>Halaman Biodata Pribadi</p>
+        </div>
+
+        <div class="card-body">
+            
+            <div class="info-item">
+                <div class="icon">🏫</div>
+                <div class="info-content">
+                    <div class="label">Kelas</div>
+                    <div class="value">11-2</div>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon">📍</div>
+                <div class="info-content">
+                    <div class="label">Tempat, Tanggal Lahir</div>
+                    <div class="value">Sidoarjo, 14 Februari 2008</div>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon">👦</div>
+                <div class="info-content">
+                    <div class="label">Jenis Kelamin</div>
+                    <div class="value">Laki-laki</div>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon">🌙</div>
+                <div class="info-content">
+                    <div class="label">Agama</div>
+                    <div class="value">Islam</div>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon">🎨</div>
+                <div class="info-content">
+                    <div class="label">Hobi</div>
+                    <div class="value">Menggambar</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
